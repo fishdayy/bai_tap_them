@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="nhập a" id="a">
+<input type="number" placeholder="nhập b" id="b">
+<button onclick="ketqua()">Tổng</button>
+<p id="tong"></p>
+</body>
+</html>
+<script>
+  function ketqua(){
+    let a = +document.getElementById('a').value;
+    let b = +document.getElementById('b').value;
+    let n = (b - a) + 1;
+    let tong = n * ((a + b)/2)
+    document.getElementById('tong').innerHTML = tong;
+  }
+</script>

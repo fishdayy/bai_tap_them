@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" placeholder="nhập năm" id="nam">
+<button onclick="theky()">kết quả</button>
+<p id="theky"></p>
+</body>
+</html>
+<script>
+    function theky(){
+        let nam = +document.getElementById('nam').value;
+
+        if(nam % 100 == 0) {
+            theky = nam/100;
+        } else {
+            theky = nam/100 + 1;
+        }
+        Math.trunc(theky)
+        document.getElementById('theky').innerHTML = 'thế kỷ ' + Math.trunc(theky);
+    }
+
+</script>
